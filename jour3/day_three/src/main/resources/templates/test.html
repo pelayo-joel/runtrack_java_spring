@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Runtrack Java Spring | Jour 3</title>
+</head>
+<body>
+    <br>
+    <h1>JPA test | Day 3</h1>
+    <table th:each="person: ${persons}">
+        <tr>
+            <td>ID</td>
+            <td th:text="${person.getId()}"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td th:text="${person.getName()}"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td th:text="${person.getAge()}"></td>
+        </tr>
+    </table>
+</body>
+</html>
