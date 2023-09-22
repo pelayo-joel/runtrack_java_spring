@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Runtrack Java Spring | Jour 5</title>
+</head>
+    <body>
+        <h1>JPA test | Jour 5</h1>
+        <form action="#" th:action="@{/personform}" th:object="${person}" method="post">
+            <p>Name: <input type="text" th:field="*{name}"/></p>
+            <p>First Name: <input type="text" th:field="*{firstName}"/></p>
+            <p>Age: <input type="text" th:field="*{age}"/></p>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </body>
+</html>
